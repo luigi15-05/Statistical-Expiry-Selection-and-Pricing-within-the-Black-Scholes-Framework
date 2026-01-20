@@ -125,26 +125,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-    
-    
-    
-"""
-    Follows-up & work in progress: historical volatility
-    
-    best_option["impl_vol"] = get_hist_volatility(ticker_opt, days_to_best_expiry) #poi risolvi sta storia dei nomi
-    print(best_option["impl_vol"])
-    best_option["finite_difference_price_call"] = bs_finite(S, best_option, T_best*365/252, r_eff_best,
-                                                           300, 10000)
-    best_option["finite_diff_rel_error"] = abs((best_option["finite_difference_price_call"] - best_option["mid_price_call"]))/best_option["finite_difference_price_call"]
-    print(best_option[["in_the_moneyness","mid_price_call",
-            "finite_difference_price_call","finite_diff_rel_error"]])
-    
-    worst_option["impl_vol"] = get_hist_volatility(ticker_opt, days_to_worst_expiry) #poi risolvi sta storia dei nomi
-    print(worst_option["impl_vol"])
-    worst_option["finite_difference_price_call"] = bs_finite(S, worst_option, T_worst*365/252, r_eff_best,
-                                                           300, 10000)
-    worst_option["finite_diff_rel_error"] = abs((worst_option["finite_difference_price_call"] - worst_option["mid_price_call"]))/worst_option["finite_difference_price_call"]
-    print(worst_option[["in_the_moneyness","mid_price_call",
-            "finite_difference_price_call","finite_diff_rel_error"]].head(60))
-"""
